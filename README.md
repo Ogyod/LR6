@@ -40,3 +40,40 @@ git version 2.50.1 (Apple Git-155)
 Формат: сокращённый хэш, дата, автор и комментарий коммита.
 
 ```text
+```
+
+## Журнал команд
+
+Команды приведены без результатов выполнения.
+
+```bash
+git clone https://github.com/Ogyod/LR6.git
+git branch -a
+git log --oneline --decorate --all --graph
+git config user.name "4515 Румянцев А. Р."
+git config user.email "236247138+Ogyod@users.noreply.github.com"
+git switch -c branch1 --track origin/branch1
+git switch master
+git merge --no-edit branch1
+git add mergefile.txt
+git commit -m "Разрешён конфликт слияния branch1 в master"
+git branch -d branch1
+git add notes.txt
+git commit -m "Добавлены заметки по истории веток"
+git add temporary.txt
+git commit -m "Создан временный файл для проверки отката"
+git add practice.txt
+git commit -m "Добавлен перечень шагов лабораторной"
+git revert --no-edit ffcaf1d
+git switch -c report
+git log --all --date=short --pretty=format:"%h %ad %an %s" --graph
+git --version
+```
+
+## Снимки экрана
+
+В каталоге `screenshots/` должны находиться снимки консоли и сторонних программ, сделанные во время выполнения работы. В этой версии репозитория текстовая запись версии Git не выдаётся за снимок экрана.
+
+## Заключение
+
+В ходе работы изучены форк и клонирование репозитория, просмотр истории, разрешение конфликта при слиянии, удаление побочной ветки, создание коммитов и откат изменения. Итоговый PDF с титульным листом и ссылкой на репозиторий подготовлен отдельно для загрузки в личный кабинет ГУАП.
